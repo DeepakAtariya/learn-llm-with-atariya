@@ -25,7 +25,7 @@ from anthropic import Anthropic, APIError
 # Setup
 # ============================================
 
-client = Anthropic(api_key="<API KEY>")
+client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
 # Simple in-memory cache
 cache = {}
